@@ -35,7 +35,10 @@ def calculando():
     contagem_dos_primos = len(primos)
     avg = mean(primos)
     
-    # Impressão na tela dos resultados da consulta 
+    # Impressão na tela dos resultados da consulta
+    calcular.label_4.setText("Os Números Primos no Intervalo de: "  +str(campo_1) +  ' e '   +str(campo_2) +
+                '  São :\n' + str(primos))
+                
     calcular.label_6.setText("A quantidade de números primos entre: "  +str(campo_1) +  ' e '   +str(campo_2) +
                 '  São :\n' +str(contagem_dos_primos))
 
@@ -44,9 +47,6 @@ def calculando():
 
     calcular.label_8.setText("A média aritmética dos números primos entre: "  +str(campo_1) +  ' e '   +str(campo_2) +
                 '  São :\n' +str(avg).replace('nan','0'))
-
-    calcular.label_4.setText("Os Números Primos no Intervalo de: "  +str(campo_1) +  ' e '   +str(campo_2) +
-                '  São :\n' + str(primos))
 
     # Fim da impressão
 
