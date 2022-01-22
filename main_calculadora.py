@@ -37,7 +37,7 @@ def calculando():
     
     # Impressão na tela dos resultados da consulta
     calcular.label_4.setText("Os Números Primos no Intervalo de: "  +str(campo_1) +  ' e '   +str(campo_2) +
-                '  São :\n' + str(primos))
+                '  São :\n' + str(primos).replace('[','').replace(']',''))
                 
     calcular.label_6.setText("A quantidade de números primos entre: "  +str(campo_1) +  ' e '   +str(campo_2) +
                 '  São :\n' +str(contagem_dos_primos))
